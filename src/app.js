@@ -1,6 +1,7 @@
 import  express  from "express";
 import db from "./config/dbConnect.js";
-import routes from "./routes/index.js"
+import routes from "./routes/index.js";
+import cors from 'cors'
 
 db.on("error", console.log.bind(console, "Erro de conxão"))
 db.once("open", ()=> {
@@ -9,6 +10,14 @@ db.once("open", ()=> {
 
 const app = express();
 app.use(express.json());
+
+app.use(
+    cors({
+        origin: "*",
+        methods: ["GET, POST, PUT, DELETE"]
+    })
+)
+
 routes(app);
 
 export default app

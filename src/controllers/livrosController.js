@@ -70,8 +70,10 @@ class LivroController {
         })
     }
     /*static deletaLivro = (req, res) => {
-        
+
     }*/
+
+    ///livros/busca?editora=Forms
 
 }
 
