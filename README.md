@@ -2,6 +2,7 @@
 
 
 # Idéia <br/>
+A idéia principal partiu do curso de API com Express e MongoDB na Alura <br/>
 Foi desenvolvido uma aplicação com Back-End utilizando as linguagens **NodeJs, Express e MongoDB** para implementação da API ao qual realiza todos os métodos CRUD com rotas tanto para os livros, tanto para os autores.<br/>
 A estilização do front-end foi implementado utilizando as linguagens **ReactJs, TypeScript e Styled-Components**
 
